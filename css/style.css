@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* =================================
+   Top Bar
+================================= */
+
+.top-bar {
+    background-color: #ffffff;
+}
+
+.top-bar-content {
+    width: 80%;
+    max-width: 1200px;
+    min-height: 100px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+
+.logo {
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.logo-dark {
+    color: #1f2b6c;
+}
+
+.logo-blue {
+    color: #159eec;
+}
+
+
+/* Information */
+
+.top-info {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-item i {
+    color: #1f2b6c;
+    font-size: 32px;
+}
+
+.info-item p {
+    color: #1f2b6c;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.info-item span {
+    color: #159eec;
+
+    font-size: 14px;
+}
+
+
+/* =================================
+   Navbar
+================================= */
+
+.navbar {
+    background-color: #1f2b6c;
+}
+
+.navbar-content {
+    width: 80%;
+    max-width: 1200px;
+    min-height: 75px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Links */
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+}
+
+
+/* Right Side */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.search-icon {
+    color: #ffffff;
+
+    font-size: 25px;
+
+    text-decoration: none;
+}
+
+.appointment-btn {
+    background-color: #bfd2f8;
+    color: #1f2b6c;
+
+    text-decoration: none;
+
+    padding: 14px 35px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+}
+
+
+/* =================================
+   Testing Space
+================================= */
+
+.page-space {
+    height: 350px;
+}
+
+
+/* =================================
+   Footer
+================================= */
+
+.footer {
+    background-color: #1f2b6c;
+    color: #ffffff;
+
+    padding: 60px 0 25px;
+}
+
+.footer-content {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* Footer Top */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.footer-column {
+    width: 23%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+.footer-column p {
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Footer Logo */
+
+.footer-about h2 {
+    color: #bfd2f8;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* Newsletter */
+
+.newsletter-box {
+    width: 100%;
+
+    display: flex;
+}
+
+.newsletter-box input {
+    width: 85%;
+
+    padding: 12px;
+
+    border: none;
+    outline: none;
+
+    background-color: #bfd2f8;
+    color: #1f2b6c;
+}
+
+.newsletter-box button {
+    width: 15%;
+
+    border: none;
+
+    background-color: #bfd2f8;
+    color: #1f2b6c;
+
+    cursor: pointer;
+}
+
+
+/* Footer Line */
+
+.footer-line {
+    height: 1px;
+
+    background-color: #bfd2f8;
+
+    margin: 40px 0 25px;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+
+    font-size: 17px;
+
+    text-decoration: none;
+}
