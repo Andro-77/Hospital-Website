@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medical</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Shared Layout</title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+
+    <header class="top-bar">
+
+        <div class="top-bar-content">
+
+            <!-- Logo -->
+
+            <div class="logo">
+                <span class="logo-dark">MED</span><span class="logo-blue">DICAL</span>
+            </div>
+
+
+            <!-- Information -->
+
+            <div class="top-info">
+
+                <div class="info-item">
+
+                    <i class="bi bi-telephone"></i>
+
+                    <div>
+                        <p>EMERGENCY</p>
+                        <span>(237) 681-812-255</span>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <i class="bi bi-clock"></i>
+
+                    <div>
+                        <p>WORK HOUR</p>
+                        <span>09:00 - 20:00 Everyday</span>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <div>
+                        <p>LOCATION</p>
+                        <span>0123 Some Place</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="navbar-content">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About us</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="doctors.html">Doctors</a>
+                </li>
+
+                <li>
+                    <a href="blog.html">News</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-right">
+
+                <a href="#" class="search-icon">
+                    <i class="bi bi-search"></i>
+                </a>
+
+                <a href="appointment.html" class="appointment-btn">
+                    Appointment
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero -->
+     <section class="service-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+        <div class="hero-text">
+            <p>Home / Services</p>
+            <h1>Our Services</h1>
+        </div>
+    </div>
+
+</section>
+
+<!-- ================= SERVICES / CARDS ================= -->
+
+<section class="services-section">
+
+<div class="container">
+
+<div class="row g-4">
+
+
+<!-- Card 1 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+
+<div class="service-card">
+
+<div class="image-box">
+
+    <img src="image/card1.jpg.png" alt="Free Checkup">
+
+    <div class="blue-overlay"></div>
+
+    <button class="card-icon" onclick="showOverlay(this)">
+        <i class="bi bi-heart-pulse"></i>
+    </button>
+
+</div>
+
+<div class="card-content">
+
+    <h3>Free Checkup</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing Quisque placerat.
+        Convallis felis vitae tortor augue,
+        velit nec massa in.
+    </p>
+
+    <a href="#">
+        Learn More <span>→</span>
+    </a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Card 2 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+
+<div class="service-card">
+
+<div class="image-box">
+
+    <img src="image/card2.jpg.png" alt="Free Checkup">
+
+    <div class="blue-overlay"></div>
+
+    <button class="card-icon" onclick="showOverlay(this)">
+        <i class="bi bi-heart-pulse"></i>
+    </button>
+
+</div>
+
+<div class="card-content">
+
+    <h3>Free Checkup</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing Quisque placerat.
+        Convallis felis vitae tortor augue,
+        velit nec massa in.
+    </p>
+
+    <a href="#">
+        Learn More <span>→</span>
+    </a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Card 3 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+
+<div class="service-card">
+
+<div class="image-box">
+
+    <img src="image/card3.jpg.png" alt="Free Checkup">
+
+    <div class="blue-overlay"></div>
+
+    <button class="card-icon" onclick="showOverlay(this)">
+        <i class="bi bi-heart-pulse"></i>
+    </button>
+
+</div>
+
+<div class="card-content">
+
+    <h3>Free Checkup</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing Quisque placerat.
+        Convallis felis vitae tortor augue,
+        velit nec massa in.
+    </p>
+
+    <a href="#">
+        Learn More <span>→</span>
+    </a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Card 4 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+
+<div class="service-card">
+
+<div class="image-box">
+
+    <img src="image/card4.jpg.png" alt="Free Checkup">
+
+    <div class="blue-overlay"></div>
+
+    <button class="card-icon" onclick="showOverlay(this)">
+        <i class="bi bi-heart-pulse"></i>
+    </button>
+
+</div>
+
+<div class="card-content">
+
+    <h3>Free Checkup</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing Quisque placerat.
+        Convallis felis vitae tortor augue,
+        velit nec massa in.
+    </p>
+
+    <a href="#">
+        Learn More <span>→</span>
+    </a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Card 5 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+
+<div class="service-card">
+
+<div class="image-box">
+
+    <img src="image/card5.jpg.png" alt="Free Checkup">
+
+    <div class="blue-overlay"></div>
+
+    <button class="card-icon" onclick="showOverlay(this)">
+        <i class="bi bi-heart-pulse"></i>
+    </button>
+
+</div>
+
+<div class="card-content">
+
+    <h3>Free Checkup</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing Quisque placerat.
+        Convallis felis vitae tortor augue,
+        velit nec massa in.
+    </p>
+
+    <a href="#">
+        Learn More <span>→</span>
+    </a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Card 6 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+
+<div class="service-card">
+
+<div class="image-box">
+
+    <img src="image/card6.jpg.png" alt="Free Checkup">
+
+    <div class="blue-overlay"></div>
+
+    <button class="card-icon" onclick="showOverlay(this)">
+        <i class="bi bi-heart-pulse"></i>
+    </button>
+
+</div>
+
+<div class="card-content">
+
+    <h3>Free Checkup</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing Quisque placerat.
+        Convallis felis vitae tortor augue,
+        velit nec massa in.
+    </p>
+
+    <a href="#">
+        Learn More <span>→</span>
+    </a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class ="contact-section">
+
+<div class="container">
+
+<div class="contact-title">
+
+<p>GET IN TOUCH</p>
+
+<h2>Contact Us</h2>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<!-- Emergency -->
+<div class="col-lg-3 col-md-6 col-sm-12">
+
+<div class="contact-card">
+
+<div class="contact-icon">
+    <i class="bi bi-telephone-fill"></i>
+</div>
+
+<h4>EMERGENCY</h4>
+
+<p>(237) 681-812-255</p>
+
+<p>(237) 666-331-894</p>
+
+</div>
+
+</div>
+
+
+<!-- Location -->
+<div class="col-lg-3 col-md-6 col-sm-12">
+
+<div class="contact-card">
+
+<div class="contact-icon">
+    <i class="bi bi-geo-alt-fill"></i>
+</div>
+
+<h4>LOCATION</h4>
+
+<p>0123 Some place</p>
+
+<p>Some country</p>
+
+</div>
+
+</div>
+
+
+<!-- Email -->
+<div class="col-lg-3 col-md-6 col-sm-12">
+
+<div class="contact-card">
+
+<div class="contact-icon">
+    <i class="bi bi-envelope-fill"></i>
+</div>
+
+<h4>EMAIL</h4>
+
+<p>example@gmail.com</p>
+
+<p>example@yahoo.com</p>
+
+</div>
+
+</div>
+
+
+<!-- Working Hours -->
+<div class="col-lg-3 col-md-6 col-sm-12">
+
+<div class="contact-card">
+
+<div class="contact-icon">
+    <i class="bi bi-clock-fill"></i>
+</div>
+
+<h4>WORKING HOURS</h4>
+
+<p>Mon-Fri 08:00-20:00</p>
+
+<p>Saturday 09:00-18:00</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+
+<div class="footer-content">
+
+
+<!-- Footer Top -->
+
+<div class="footer-top">
+
+
+<!-- Hospital Info -->
+
+<div class="footer-column footer-about">
+
+<h2>
+    MEDDICAL.
+</h2>
+
+<p>
+    Leading the Way in Medical
+    Excellence, Trusted Care.
+</p>
+
+</div>
+
+
+<!-- Important Links -->
+
+<div class="footer-column">
+
+<h3>
+    Important Links
+</h3>
+
+<a href="appointment.html">Appointment</a>
+<a href="doctors.html">Doctors</a>
+<a href="services.html">Services</a>
+<a href="about.html">About Us</a>
+
+</div>
+
+
+<!-- Contact Us -->
+
+<div class="footer-column">
+
+<h3>
+    Contact Us
+</h3>
+
+<p>
+    Call: (237) 681-812-255
+</p>
+
+<p>
+    Email: meddical@email.com
+</p>
+
+<p>
+    Address: 0123 Some Place
+</p>
+
+<p>
+    Some Country
+</p>
+
+</div>
+
+
+<!-- Newsletter -->
+
+<div class="footer-column newsletter">
+
+<h3>
+    Newsletter
+</h3>
+
+<div class="newsletter-box">
+
+    <input type="email" placeholder="Enter your email address">
+
+    <button>
+        <i class="bi bi-send"></i>
+    </button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Footer Line -->
+
+<div class="footer-line"></div>
+
+
+<!-- Footer Bottom -->
+
+<div class="footer-bottom">
+
+<p>
+© 2026 Hospital's name All Rights Reserved
+</p>
+
+
+<div class="social-icons">
+
+<a href="#">
+    <i class="bi bi-linkedin"></i>
+</a>
+
+<a href="#">
+    <i class="bi bi-facebook"></i>
+</a>
+
+<a href="#">
+    <i class="bi bi-instagram"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
