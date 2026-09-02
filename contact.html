@@ -200,33 +200,65 @@
 
                 <!-- Contact Form -->
 
-                <form class="contact-form">
+                <form action="" id="contactForm" autocomplete="off" class="contact-form">
 
-                    <div class="contact-form-row">
+    <div class="contact-form-row">
 
-                        <input
-                            type="text"
-                            placeholder="Name">
+        <div class="contact-field">
 
-                        <input
-                            type="email"
-                            placeholder="Email">
+            <input
+                type="text"
+                id="userName"
+                placeholder="Name">
 
-                    </div>
+            <small class="contact-error"></small>
 
-                    <input
-                        type="text"
-                        placeholder="Subject"
-                        class="contact-subject">
+        </div>
 
-                    <textarea
-                        placeholder="Message"></textarea>
 
-                    <button type="button" id="contactSubmit">
-                        SUBMIT
-                    </button>
+        <div class="contact-field">
 
-                </form>
+            <input
+                type="text"
+                id="userEmail"
+                placeholder="Email">
+
+            <small class="contact-error"></small>
+
+        </div>
+
+    </div>
+
+
+    <div class="contact-field contact-field-full">
+
+        <input
+            type="text"
+            id="userSubject"
+            placeholder="Subject"
+            class="contact-subject">
+
+        <small class="contact-error"></small>
+
+    </div>
+
+
+    <div class="contact-field contact-field-full">
+
+        <textarea
+            id="userMessage"
+            placeholder="Message"></textarea>
+
+        <small class="contact-error"></small>
+
+    </div>
+
+
+    <button type="submit">
+        SUBMIT
+    </button>
+
+</form>
 
 
                 <!-- Contact Cards -->
@@ -634,6 +666,10 @@
 </body>
 
 </html>
+
+
+
+
 
 
 
