@@ -1,0 +1,585 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+    :root {
+      --navy: #202f75;
+      --navy-2: #202f75;
+      --blue: #159bd3;
+      --light-blue: #bed0f4;
+      --page: #ffffff;
+      --text: #202f75;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .container-exact {
+      width: min(100% - 40px, 1120px);
+      margin-inline: auto;
+    }
+
+   
+    .info-bar {
+      height: 74px;
+      background: #fff;
+    }
+
+    .info-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-weight: 700;
+      font-size: 29px;
+      color: var(--navy);
+      letter-spacing: -1.5px;
+      white-space: nowrap;
+    }
+
+    .logo span { color: var(--blue); }
+
+    .info-items {
+      display: flex;
+      align-items: center;
+      gap: 46px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-width: 150px;
+    }
+
+    .info-item i {
+      font-size: 29px;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .info-label {
+      display: block;
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 3px;
+    }
+
+    .info-value {
+      color: var(--blue);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .main-nav {
+      height: 58px;
+      background: var(--navy);
+    }
+
+    .nav-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-left: 0;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .nav-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+
+    .nav-search {
+      color: #fff;
+      font-size: 21px;
+    }
+
+    .appointment-btn {
+      border: 0;
+      background: var(--light-blue);
+      color: var(--navy);
+      border-radius: 30px;
+      padding: 9px 31px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 263px;
+      background-image: url("../images/doctor.jpg");
+      background-size: cover;
+      background-position: center 39%;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,.48);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(to right, #c6d8fa 0 25%, var(--navy) 25% 84%, var(--blue) 84%);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 5px;
+    }
+
+    .hero-inner::before {
+      content: "";
+      position: absolute;
+      left: -100px;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      background: #9bd7f2;
+      border-radius: 0 0 100% 0;
+      opacity: .85;
+    }
+
+    .breadcrumb-exact {
+      font-size: 12px;
+      margin-bottom: 5px;
+      color: var(--navy);
+    }
+
+    .hero h1 {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 42px;
+      line-height: 1.1;
+      margin: 0;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* APPOINTMENT SECTION */
+    .appointment-section {
+      padding: 67px 0 42px;
+    }
+
+    .appointment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .section-title {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 25px;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 13px;
+    }
+
+    .intro {
+      color: #161616;
+      font-size: 12px;
+      line-height: 1.45;
+      max-width: 510px;
+      margin-bottom: 45px;
+    }
+
+    .appointment-form {
+      background: var(--navy);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .form-control-exact,
+    .form-select-exact,
+    .message-exact {
+      width: 100%;
+      border: 0;
+      border-right: 1px solid rgba(255,255,255,.65);
+      border-bottom: 1px solid rgba(255,255,255,.65);
+      background: var(--navy);
+      color: #fff;
+      padding: 0 18px;
+      font-family: "Inter", sans-serif;
+      font-size: 12px;
+      outline: none;
+      border-radius: 0;
+    }
+
+    .form-control-exact,
+    .form-select-exact { height: 39px; }
+
+    .form-control-exact::placeholder,
+    .message-exact::placeholder {
+      color: #fff;
+      opacity: 1;
+    }
+
+    .form-select-exact {
+      appearance: none;
+      background-image: linear-gradient(45deg, transparent 50%, #fff 50%),
+                        linear-gradient(135deg, #fff 50%, transparent 50%);
+      background-position: calc(100% - 18px) 15px, calc(100% - 13px) 15px;
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+      padding-right: 35px;
+    }
+
+    .form-select-exact option {
+      color: #111;
+      background: #fff;
+    }
+
+    .message-wrap { grid-column: 1 / -1; }
+
+    .message-exact {
+      height: 125px;
+      padding-top: 14px;
+      resize: none;
+      border-right: 0;
+    }
+
+    .field:nth-child(even) .form-control-exact,
+    .field:nth-child(even) .form-select-exact {
+      border-right: 0;
+    }
+
+    .submit-wrap {
+      grid-column: 1 / -1;
+      height: 38px;
+      background: var(--light-blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .submit-btn {
+      border: 0;
+      background: transparent;
+      color: var(--navy);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .4px;
+    }
+
+    /* SCHEDULE */
+    .schedule-card {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 4px;
+      padding: 31px 49px 29px;
+      min-height: 426px;
+      text-align: center;
+    }
+
+    .schedule-title {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 31px;
+      font-weight: 700;
+      color: var(--light-blue);
+      margin: 0 0 28px;
+      text-align: center;
+
+    }
+
+    .schedule-row {
+      display: grid;
+      grid-template-columns: 1fr 20px 1.65fr;
+      align-items: center;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .schedule-row .dash { color: #dce4fa; text-align: center; }
+    .schedule-row .hours { text-align: left; }
+
+    .emergency-box {
+      border-top: 1px solid rgba(255,255,255,.8);
+      margin-top: 21px;
+      padding-top: 23px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .emergency-box i { font-size: 30px; }
+    .emergency-text { line-height: 1.05; }
+    .emergency-text strong {
+      display: block;
+      font-size: 17px;
+      font-weight: 500;
+    }
+    .emergency-text span {
+      font-size: 16px;
+      color: var(--light-blue);
+    }
+
+    /* MAP */
+    .map-wrap {
+      margin-top: 40px;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 290px;
+    }
+
+    .map-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* CONTACT */
+    .contact-section {
+      padding: 58px 0 80px;
+    }
+
+    .contact-heading {
+      text-align: center;
+      margin-bottom: 47px;
+    }
+
+    .get-in-touch {
+      color: var(--blue);
+      font-weight: 1000;
+      font-size: 24px;
+      margin-bottom: 7px;
+    }
+
+    .contact-heading h2 {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 23px;
+      margin: 0;
+      color: var(--navy);
+    }
+
+    .contact-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .contact-card {
+      min-height: 150px;
+      background: var(--light-blue);
+      border-radius: 4px;
+      padding: 27px 29px;
+      color: var(--navy);
+    }
+
+    .contact-card.dark { background: var(--navy); color: #fff; }
+
+    .contact-card i {
+      font-size: 27px;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .contact-card h3 {
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+
+    .contact-card p {
+      font-size: 11px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      color: #fff;
+      padding: 48px 0 31px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr 1fr 1fr;
+      gap: 55px;
+    }
+
+    .footer-logo {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .footer-about {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .footer-title {
+      font-size: 12px;
+      font-weight: 700;
+      margin: 5px 0 21px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      font-size: 11px;
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-contact {
+      font-size: 11px;
+      line-height: 1.8;
+    }
+
+    .newsletter {
+      display: flex;
+      background: var(--light-blue);
+      border-radius: 3px;
+      overflow: hidden;
+      height: 37px;
+    }
+
+    .newsletter input {
+      border: 0;
+      outline: 0;
+      background: transparent;
+      flex: 1;
+      min-width: 0;
+      padding: 0 12px;
+      font-size: 10px;
+      color: var(--navy);
+    }
+
+    .newsletter input::placeholder { color: var(--navy); }
+
+    .newsletter button {
+      width: 43px;
+      border: 0;
+      background: transparent;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.3);
+      margin-top: 30px;
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 15px;
+    }
+
+    .socials a {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--light-blue);
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 10px;
+    }
+
+    /* Validation */
+    .invalid {
+      box-shadow: inset 0 0 0 1px #ff6b6b;
+    }
+
+    #formMessage {
+      display: none;
+      margin-top: 12px;
+      background: #d1e7dd;
+      color: #0f5132;
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 991px) {
+      .info-items { gap: 18px; }
+      .appointment-grid { grid-template-columns: 1fr; }
+      .schedule-card { margin-top: 10px; }
+      .contact-cards { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 767px) {
+      .info-bar { height: auto; padding: 14px 0; }
+      .info-inner { flex-direction: column; gap: 14px; }
+      .info-items { flex-wrap: wrap; justify-content: center; }
+      .main-nav { height: auto; padding: 13px 0; }
+      .nav-inner { flex-wrap: wrap; gap: 12px; }
+      .nav-links { gap: 13px; flex-wrap: wrap; }
+      .nav-right { margin-left: 0; }
+      .hero { height: 220px; }
+      .hero h1 { font-size: 31px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field .form-control-exact,
+      .field .form-select-exact { border-right: 0; }
+      .message-wrap, .submit-wrap { grid-column: 1; }
+      .schedule-card { padding: 28px 25px; }
+      .contact-cards, .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 20px; align-items: flex-start; }
+    }

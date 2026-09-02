@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meddical - Appointment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- TOP INFORMATION -->
+  <div class="info-bar">
+    <div class="container-exact info-inner">
+      <div class="logo">MEDD<span>ICAL</span></div>
+
+      <div class="info-items">
+        <div class="info-item">
+          <i class="bi bi-telephone"></i>
+          <div>
+            <span class="info-label">Emergency</span>
+            <span class="info-value">(237) 681-812-255</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="bi bi-clock"></i>
+          <div>
+            <span class="info-label">Work Hour</span>
+            <span class="info-value">09:00 - 20:00 Everyday</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="bi bi-geo-alt"></i>
+          <div>
+            <span class="info-label">Location</span>
+            <span class="info-value">0123 Some Place</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="main-nav">
+    <div class="container-exact nav-inner">
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Services</a>
+        <a href="#">Doctors</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="nav-right">
+        <i class="bi bi-search nav-search"></i>
+        <a href="#appointment" class="appointment-btn text-decoration-none">Appointment</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container-exact hero-inner">
+      <div class="breadcrumb-exact"><a href="#home" class="text-decoration-none text-dark">Home</a>&nbsp; / &nbsp;<a href="#appointment" class="text-decoration-none text-dark">Appointment</a></div>
+      <h1>Book an Appointment</h1>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT -->
+  <section class="appointment-section" id="appointment">
+    <div class="container-exact">
+      <div class="appointment-grid">
+
+        <div>
+          <h2 class="section-title">Book an Appointment</h2>
+          <p class="intro">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Quisque placerat scelerisque tortor ornare ornare. Convallis<br>
+            felis vitae tortor augue. Velit nascetur proin massa in.<br>
+            Consequat faucibus porttitor enim et.
+          </p>
+
+          <form id="appointmentForm" class="appointment-form" novalidate>
+            <div class="form-grid">
+
+              <div class="field">
+                <input class="form-control-exact" id="name" type="text" placeholder="Name" required>
+              </div>
+
+              <div class="field">
+                <select class="form-select-exact" id="gender" required>
+                  <option value="" selected disabled>Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <input class="form-control-exact" id="email" type="email" placeholder="Email" required>
+              </div>
+
+              <div class="field">
+                <input class="form-control-exact" id="phone" type="tel" placeholder="Phone" required>
+              </div>
+
+              <div class="field">
+                <input class="form-control-exact" id="date" type="date" required aria-label="Date">
+              </div>
+
+              <div class="field">
+                <input class="form-control-exact" id="time" type="time" required aria-label="Time">
+              </div>
+
+              <div class="field">
+                <select class="form-select-exact" id="doctor" required>
+                  <option value="" selected disabled>Doctor</option>
+                  <option>Doctor 1</option>
+                  <option>Doctor 2</option>
+                  <option>Doctor 3</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <select class="form-select-exact" id="department" required>
+                  <option value="" selected disabled>Department</option>
+                  <option>Department 1</option>
+                  <option>Department 2</option>
+                  <option>Department 3</option>
+                </select>
+              </div>
+
+              <div class="message-wrap">
+                <textarea class="message-exact" id="message" placeholder="Message"></textarea>
+              </div>
+
+              <div class="submit-wrap">
+                <button type="submit" class="submit-btn">SUBMIT</button>
+              </div>
+            </div>
+          </form>
+          <div id="formMessage">Appointment submitted successfully.</div>
+        </div>
+
+        <!-- SCHEDULE -->
+        <div class="schedule-card">
+          <h2 class="schedule-title">Shedule hours</h2>
+
+          <div class="schedule-row">
+            <span>Monday</span><span class="dash">—</span><span class="hours">09:00 AM - 07:00 PM</span>
+          </div>
+          <div class="schedule-row">
+            <span>Tuesday</span><span class="dash">—</span><span class="hours">09:00 AM - 07:00 PM</span>
+          </div>
+          <div class="schedule-row">
+            <span>Wednesday</span><span class="dash">—</span><span class="hours">09:00 AM - 07:00 PM</span>
+          </div>
+          <div class="schedule-row">
+            <span>Thursday</span><span class="dash">—</span><span class="hours">09:00 AM - 07:00 PM</span>
+          </div>
+          <div class="schedule-row">
+            <span>Friday</span><span class="dash">—</span><span class="hours">09:00 AM - 07:00 PM</span>
+          </div>
+          <div class="schedule-row">
+            <span>Saturday</span><span class="dash">—</span><span class="hours">09:00 AM - 07:00 PM</span>
+          </div>
+          <div class="schedule-row">
+            <span>Sunday</span><span class="dash">—</span><span class="hours">Closed</span>
+          </div>
+
+          <div class="emergency-box">
+            <i class="bi bi-telephone"></i>
+            <div class="emergency-text">
+              <strong>Emergency</strong>
+              <span>(237) 681-812-255</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP IMAGE FROM PDF -->
+      <div class="map-wrap">
+        <img src="images/map.jpg" alt="Map location shown in the supplied design">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="container-exact">
+      <div class="contact-heading">
+        <div class="get-in-touch">G E T &nbsp; I N &nbsp; T O U C H</div>
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact-cards">
+        <div class="contact-card">
+          <i class="bi bi-telephone"></i>
+          <h3>EMERGENCY</h3>
+          <p>(237) 681-812-255<br>(237) 666-331-894</p>
+        </div>
+
+        <div class="contact-card dark">
+          <i class="bi bi-geo-alt"></i>
+          <h3>LOCATION</h3>
+          <p>0123 Some place<br>9876 Some country</p>
+        </div>
+
+        <div class="contact-card">
+          <i class="bi bi-envelope"></i>
+          <h3>EMAIL</h3>
+          <p>fildineeesoe@gmil.com<br>myebstudios@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+          <i class="bi bi-clock"></i>
+          <h3>WORKING HOURS</h3>
+          <p>Mon-Sat 09:00-20:00<br>Sunday Emergency only</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container-exact">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-logo">MEDDICAL</div>
+          <div class="footer-about">
+            Leading the Way in Medical<br>
+            Excellence, Trusted Care.
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Important Links</div>
+          <ul class="footer-links">
+            <li><a href="#appointment">Appointment</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Contact Us</div>
+          <div class="footer-contact">
+            Call: (237) 681-812-255<br>
+            Email: fildineeesoe@gmail.com<br>
+            Address: 0123 Some place<br>
+            Some country
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Newsletter</div>
+          <form class="newsletter" id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+            <button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2021 Hospital's name All Rights Reserved by PNTEC-LTD</div>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script src="js/script.js"></script>
+
+</body>
+</html>
