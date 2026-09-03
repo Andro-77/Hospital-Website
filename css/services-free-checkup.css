@@ -173,7 +173,7 @@ body {
 
 .service-hero {
     height: 220px;
-    background-image: url("image/hero1.jpg.png");
+    background-image: url("images/hero1.jpg.png");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -183,7 +183,7 @@ body {
 }
 
 .page2 .service-hero {
-    background-image: url("image/hero2. jpg.png");
+    background-image: url("images/hero2.jpg.png");
 }
 
 /* الطبقة الشفافة فوق الصورة */
