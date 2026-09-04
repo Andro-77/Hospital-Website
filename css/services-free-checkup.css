@@ -469,8 +469,6 @@ body {
 
     background-color: #BFD2F8;
 
-    color: var(--main-color);
-
     border-radius: 2px;
 
     transition: 0.3s;
@@ -481,8 +479,9 @@ body {
 
 .contact-card:hover {
     background-color: var(--main-color);
+     color: white;
 
-    color: white;
+
 }
 
 
